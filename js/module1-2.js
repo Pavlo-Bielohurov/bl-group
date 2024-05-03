@@ -96,3 +96,36 @@
 //   result += i;
 // }
 // console.log(result);
+
+//TODO: № 8  =========================================================
+// Напишіть if..else, що відповідає наступному switch:
+// const browser = "Opera"
+// switch (browser) {
+//   case 'Edge':
+//     alert( "You've got the Edge!" );
+//     break;
+//   case 'Chrome':
+//   case 'Firefox':
+//   case 'Safari':
+//   case 'Opera':
+//     alert( 'Okay we support these browsers too' );
+//     break;
+//   default:
+//     alert( 'We hope that this page looks ok!' );
+// }
+
+// const browser = "sd";
+// if (
+//   browser === "Opera" ||
+//   browser === "Chrome" ||
+//   browser === "Safari" ||
+//   browser === "Firefox"
+// ) {
+//   alert("Okay we suport these browsers too");
+// } else if (browser === "Edge") {
+//   alert("You've got the Edge!");
+// } else {
+//   alert("We hope that this page looks ok!");
+// }
+
+// console.log(browser);
