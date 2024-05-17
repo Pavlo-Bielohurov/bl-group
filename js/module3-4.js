@@ -91,3 +91,27 @@
 //   return key in obj; // for in
 // }
 // console.log(getBool("name", obj));
+
+//TODO: № 9 ==============================================================
+// Створіть функцію multiplyNumeric(obj),
+// яка множить всі числові властивості об'єкта obj на 2
+// треба повертати об'єкт
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu",
+// };
+
+// function multiplyNumeric(obj) {
+//   for (const key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//       if (typeof obj[key] !== "number") {
+//         continue;
+//       }
+//       obj[key] *= 2;
+//     }
+//   }
+//   return obj;
+// }
+
+// console.log(multiplyNumeric(menu));
