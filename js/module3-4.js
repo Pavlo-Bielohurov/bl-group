@@ -119,12 +119,17 @@
 //TODO: № 10 ==============================================================
 // Напиши функцію яка приймає массив чисел і повертає новий массив,
 // унікальних чисел
-const numbers = [1, 1, 1, 2, 3, 4, 7, 7, 6, 6, 5, 4, 23, 22, 22, 111, 1, 5];
-function uniqArr(array) {
-  const uniq = [];
-  for (const number of array) {
-    uniq[number] = number;
-  }
-  return Object.values(uniq);
-}
-console.log(uniqArr(numbers));
+// const numbers = [1, 1, 1, 2, 3, 4, 7, 7, 6, 6, 5, 4, 23, 22, 22, 111, 1, 5];
+// function uniqArr(array) {
+//   const uniq = [];
+//   for (const number of array) {
+//     uniq[number] = number;
+//   }
+//   return Object.values(uniq);
+// }
+// console.log(uniqArr(numbers));
+
+//Homework ==============================================================
+const a = [1, 2, 3, 4, 5, 6, 7];
+const b = a.slice(3, 6).push(4);
+console.log(b);
