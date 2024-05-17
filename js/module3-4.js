@@ -42,3 +42,15 @@
 //   return total / count;
 // }
 // console.log(caclculateAverage(true, 1, 1, 2, 20, "Hello"));
+//TODO: № 4 ==============================================================
+// напиши функцію яка сумуватиме сусідні числа і пушити в новий масив
+// const someArr = [22, 11, 34, 5, 12, 13, 14, 15];
+// function totalArr(array) {
+//     const result = [];
+//     for (let i = 0; i < array.length -1; i+=1) {
+//         result.push(array[i] + array[i+1]); 
+        
+//     }
+//     return result;
+// }
+// console.log(totalArr(someArr));
