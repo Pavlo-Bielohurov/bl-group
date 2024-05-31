@@ -130,6 +130,6 @@
 // console.log(uniqArr(numbers));
 
 //Homework ==============================================================
-const a = [1, 2, 3, 4, 5, 6, 7];
-const b = a.slice(3, 6).push(4);
-console.log(b);
+// const a = [1, 2, 3, 4, 5, 6, 7];
+// const b = a.slice(3, 6).push(4);
+// console.log(b);
