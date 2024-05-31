@@ -43,3 +43,26 @@
 // chill("kartopla z salem");
 
 // cooking("Oliwe i cholodec");
+
+//TODO № 3 з колбеком =====================================
+//Напишіть дві функції
+// letMeSeeYourName(callback) - запитує ім'я користувача
+//через prompt та викликає callback функцію
+//greet(name) - коллбек, що приймає ім'я і логірує в консоль
+//Рядок "Привіт <name>"
+//Реалізуй перевірку, що prompt не порожній
+
+// function letMeSeeYourName(callback) {
+//   const name = prompt("Як тебе звати ?");
+//   if (!name) {
+//     alert("Введіть ім'я");
+//     return;
+//   }
+//   return callback(name);
+// }
+
+// const greet = (name) => {
+//   alert(`Привіт ${name}`);
+// };
+
+// letMeSeeYourName(greet);
