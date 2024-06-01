@@ -148,73 +148,75 @@
 //  Крім того, зоопарк повинен мати метод для додавання тварин до списку та
 // метод для виведення списку всіх тварин у зоопарку.
 
-class Animal {
-  constructor(name, type) {
-    this.name = name;
-    this.type = type;
-  }
+// class Animal {
+//   constructor(name, type) {
+//     this.name = name;
+//     this.type = type;
+//   }
 
-  getInfo() {
-    return `name:${this.name}, type:${this.type}`;
-  }
+//   getInfo() {
+//     return `name:${this.name}, type:${this.type}`;
+//   }
 
-  feed() {
-    return `${this.name} shos kushaje`;
-  }
-}
+//   feed() {
+//     return `${this.name} shos kushaje`;
+//   }
+// }
 
-class Mammal extends Animal {
-  constructor(name, type, eat) {
-    super(name, type);
-    this.eat = eat;
-  }
+// class Mammal extends Animal {
+//   constructor(name, type, eat) {
+//     super(name, type);
+//     this.eat = eat;
+//   }
 
-  getInfo() {
-    return `${super.getInfo()}, eat: ${this.eat} `;
-  }
+//   getInfo() {
+//     return `${super.getInfo()}, eat: ${this.eat} `;
+//   }
 
-  feed() {
-    return `${this.name} est takue-to edu(${this.eat})`;
-  }
-}
+//   feed() {
+//     return `${this.name} est takue-to edu(${this.eat})`;
+//   }
+// }
 
-class Bird extends Animal {
-  constructor(name, type, fly) {
-    super(name, type);
-    this.fly = fly;
-  }
+// class Bird extends Animal {
+//   constructor(name, type, fly) {
+//     super(name, type);
+//     this.fly = fly;
+//   }
 
-  getInfo() {
-    return `${super.getInfo()}, fly: ${this.fly} `;
-  }
+//   getInfo() {
+//     return `${super.getInfo()}, fly: ${this.fly} `;
+//   }
 
-  fly() {
-    return `${this.name} na stokato ${this.fly}m  letaet, bez dozaratki`;
-  }
-}
+//   fly() {
+//     return `${this.name} na stokato ${this.fly}m  letaet, bez dozaratki`;
+//   }
+// }
 
-class Zoo {
-  constructor() {
-    this.animals = [];
-  }
+// class Zoo {
+//   constructor() {
+//     this.animals = [];
+//   }
 
-  addAnimal(animal) {
-    return this.animals.push(animal);
-  }
+//   addAnimal(animal) {
+//     return this.animals.push(animal);
+//   }
 
-  infoAnimals() {
-    console.log("Zoo info animals");
+//   infoAnimals() {
+//     console.log("Zoo info animals");
 
-    return this.animals.map((animal) => console.log(animal.getInfo()));
-  }
-}
+//     return this.animals.map((animal) => console.log(animal.getInfo()));
+//   }
+// }
 
-const zoo = new Zoo();
+// const zoo = new Zoo();
 
-const lion = new Mammal("Simba-bimba", "lion", "meat");
-zoo.addAnimal(lion);
+// const lion = new Mammal("Simba-bimba", "lion", "meat");
+// zoo.addAnimal(lion);
 
-const papuga = new Bird("Kesha", "bird", 20000);
-zoo.addAnimal(papuga);
+// const papuga = new Bird("Kesha", "bird", 20000);
+// zoo.addAnimal(papuga);
 
-zoo.infoAnimals();
+// zoo.infoAnimals();
+
+
