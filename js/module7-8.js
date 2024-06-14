@@ -20,7 +20,7 @@
 //   const saveValue = inputOne.value;
 //   inputOne.value = inputTwo.value;
 //   inputTwo.value = saveValue;
-}
+// }
 //TODO: № 3 ==============================================
 // При кліку на кнопку текст параграфів змінюється на їх порядковий номер
 
