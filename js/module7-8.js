@@ -103,3 +103,16 @@
 //       break;
 //   }
 // }
+
+//TODO: № 7 ==============================================
+// Натиснувши кнопку "Подвоювати", збільшити значення
+// у кожному елементі списку у 2 рази
+
+// const items = document.querySelector(".list").children;
+// const btn = document.querySelector("#double");
+// btn.addEventListener("click", doubleNumbers);
+// function doubleNumbers() {
+//   [...items].map((item) => {
+//     item.textContent *= 2;
+//   });
+// }
