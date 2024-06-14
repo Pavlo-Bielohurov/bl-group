@@ -9,6 +9,18 @@
 //   console.log(showInput);
 // });
 
+//TODO: № 2 ==============================================
+// Після натискання кнопки "SWAP ME" здійснюється обмін вмістом між двома інпутами.
+// Ви можете натиснути на неї кілька разів або вручну змінити вміст інпутів.
+// const button = document.querySelector("#swapButton");
+// const inputOne = document.querySelector("#leftSwapInput");
+// const inputTwo = document.querySelector("#rightSwapInput");
+// button.addEventListener("click", changeValue);
+// function changeValue() {
+//   const saveValue = inputOne.value;
+//   inputOne.value = inputTwo.value;
+//   inputTwo.value = saveValue;
+}
 //TODO: № 3 ==============================================
 // При кліку на кнопку текст параграфів змінюється на їх порядковий номер
 
