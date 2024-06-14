@@ -103,7 +103,21 @@
 //       break;
 //   }
 // }
+//TODO: № 6 ==============================================
+// Додайде слухач кліку і визначте, коли клік відбувається
+// всередині елемента з id "place" і коли клік припадає поза зоною елемента
+// https://developer.mozilla.org/en-US/docs/Web/API/Node/contains
 
+// const div = document.querySelector("#place");
+// window.addEventListener("click", (evt) => {
+// console.log(evt.target);
+//   const isEl = div.contains(evt.target);
+//   if (isEl) {
+//     console.log(`Клік відбувся в середині темно зеленого поля`);
+//     return;
+//   }
+//   console.log(`Ви тапнули мимо`);
+// });
 //TODO: № 7 ==============================================
 // Натиснувши кнопку "Подвоювати", збільшити значення
 // у кожному елементі списку у 2 рази
