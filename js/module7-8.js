@@ -1,3 +1,14 @@
+//TODO: № 1 ==============================================
+//Натискання на кнопку "SHOW ME" має виводити значення з поля введення
+// (дивіться на елементи в html-розмітці)
+
+// const button = document.querySelector("#alertButton");
+// button.addEventListener("click", () => {
+//   //   const showInput = document.querySelector("#alertInput").value;
+//   const showInput = button.nextElementSibling.value;
+//   console.log(showInput);
+// });
+
 //TODO: № 3 ==============================================
 // При кліку на кнопку текст параграфів змінюється на їх порядковий номер
 
