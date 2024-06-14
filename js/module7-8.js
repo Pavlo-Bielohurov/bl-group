@@ -56,3 +56,50 @@
 //   button.textContent = newText;
 //   console.log(buttonText);
 // }
+
+//TODO: № 5 ==============================================
+// Кнопка "Зменшити" робить квадрат менше на 10 пікселів, кнопка "Збільшити" - більше на 10 пікселів.
+
+// const btnOne = document.querySelector("#decrease");
+// const btnTwo = document.querySelector("#increase");
+// const divEl = document.querySelector("#box");
+
+// console.dir(divEl);
+
+// btnOne.addEventListener("click", () => {
+//   const width = divEl.offsetWidth;
+//   const height = divEl.offsetHeight;
+
+//   divEl.style.width = `${width - 10}px`;
+//   divEl.style.height = `${height - 10}px`;
+// });
+// btnTwo.addEventListener("click", () => {
+//   const width = divEl.offsetWidth;
+//   const height = divEl.offsetHeight;
+
+//   divEl.style.width = `${width + 10}px`;
+//   divEl.style.height = `${height + 10}px`;
+// });
+
+// Другий варіант
+
+// btnOne.addEventListener("click", changeDivSize);
+// btnTwo.addEventListener("click", changeDivSize);
+
+// function changeDivSize(event) {
+//   const width = divEl.offsetWidth;
+//   const height = divEl.offsetHeight;
+//   const currentBtn = event.target.getAttribute("id");
+//   console.log(currentBtn);
+
+//   switch (currentBtn) {
+//     case "decrease":
+//       divEl.style.width = `${width - 10}px`;
+//       divEl.style.height = `${height - 10}px`;
+//       break;
+//     case "increase":
+//       divEl.style.width = `${width + 10}px`;
+//       divEl.style.height = `${height + 10}px`;
+//       break;
+//   }
+// }
