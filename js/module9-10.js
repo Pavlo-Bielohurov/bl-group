@@ -46,3 +46,42 @@ function changeTheme() {
   }
   console.log(refs.checkBox.checked);
 }
+
+// TODO: ЗАДАЧА 2 на interval со старой домашки  ====================================
+// Напиши скрипт, який після натискання кнопки «Start», раз на секунду
+//  змінює колір фону < body > на випадкове значення, використовуючи інлайн стиль.
+// Натисканням на кнопку «Stop» зміна кольору фону повинна зупинятися.
+
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+
+const startBtn = document.querySelector(".btn-start");
+const stopBtn = document.querySelector(".btn-stop");
+const elementBody = document.querySelector("body");
+
+let intervalId = null;
+
+function changeBackgroundColor() {
+  elementBody.style.backgroundColor = getRandomHexColor();
+}
+stopBtn.disabled = false;
+
+startBtn.addEventListener("click", () => {
+  startBtn.disabled = true;
+  stopBtn.disabled = false;
+
+  intervalId = setInterval(changeBackgroundColor, 1000);
+});
+stopBtn.addEventListener("click", () => {
+  stopBtn.disabled = true;
+  startBtn.disabled = false;
+
+  if (intervalId === null) {
+    return;
+  }
+
+  clearInterval(intervalId);
+});
