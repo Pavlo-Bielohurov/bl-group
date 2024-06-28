@@ -93,11 +93,65 @@ stopBtn.addEventListener("click", () => {
 function greet() {
   return new Promise((res, rej) => {
     setTimeout(() => {
-      res('Hello world');
-    }, 2000)
-  })
+      res("Hello world");
+    }, 2000);
+  });
 }
-greet()
-  .then((value) => {
+greet().then((value) => {
   console.log(value);
-})
+});
+
+// TODO: ЗАДАЧА 4 на LocalStorage =========================================
+// Створи перелік справ.
+// Є інпут, який вводиться назва завдання.
+// Після натискання на кнопку "Додати" завдання додається до списку #list.
+// Поруч із кожним завданням знаходиться кнопка "Видалити", щоб можна було
+// Забрати завдання зі списку.
+// Список із завданнями має бути доступним після перезавантаження сторінки.
+
+const form = document.querySelector("#task-form");
+const input = document.querySelector('input[name="taskName"]');
+const list = document.querySelector("#task-list");
+
+let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+form.addEventListener("submit", addTask);
+
+function addTask(event) {
+  event.preventDefault();
+  const task = input.value.trim();
+
+  if (task !== "") {
+    tasks.push(task);
+    input.value = "";
+    saveTask();
+    renderTask();
+  }
+}
+
+function saveTask() {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+function renderTask() {
+  list.innerHTML = "";
+  tasks.forEach((task, index) => {
+    const li = document.createElement("li");
+    li.textContent = task;
+    const btn = document.createElement("button");
+    btn.textContent = "Delete";
+    btn.dataset.index = index;
+    btn.addEventListener("click", deleteTask);
+    li.appendChild(btn);
+    list.appendChild(li);
+  });
+}
+
+function deleteTask(event) {
+  const taskId = event.target.dataset.index;
+  tasks.splice(taskId, 1);
+  renderTask();
+  saveTask();
+}
+
+renderTask();
