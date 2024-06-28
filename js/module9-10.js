@@ -85,3 +85,19 @@ stopBtn.addEventListener("click", () => {
 
   clearInterval(intervalId);
 });
+
+// TODO: ЗАДАЧА 3 на обіцянки (Promise) ====================================
+// Перероби функцію на проміс таким чином, щоб проміс повертав значення
+// через 2 секунди після виклику функції
+
+function greet() {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res('Hello world');
+    }, 2000)
+  })
+}
+greet()
+  .then((value) => {
+  console.log(value);
+})
